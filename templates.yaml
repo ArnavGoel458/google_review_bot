@@ -1,0 +1,3 @@
+# YAML configuration for review reply templates
+# The python code will format string variables like {reviewer_name}
+reply_template: "Thank you so much, {reviewer_name}, for your kind words and the great rating! We are committed to providing accurate and timely diagnostic services for our patients in Faridabad. Wishing you the best of health!"
