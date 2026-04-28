@@ -1,7 +1,7 @@
 import requests
 from googleapiclient.discovery import build
-from auth import get_credentials, get_authorized_token
-from config import ACCOUNT_ID, LOCATION_ID, logger
+from .auth import get_credentials, get_authorized_token
+from .config import ACCOUNT_ID, LOCATION_ID, logger
 
 class GoogleBusinessClient:
     """

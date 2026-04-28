@@ -58,24 +58,24 @@ You can directly invoke the underlying Python scripts if you require granular co
 
 1. **Initial Login & Setup**: 
    ```bash
-   python login.py
+   python scripts/login.py
    ```
    This opens your web browser to securely authenticate the bot. After logging in, a temporary `token.json` file will be generated and saved relative to the script.
 
 2. **Test Account Access (Optional)**: 
    ```bash
-   python get_business.py
+   python scripts/get_business.py
    ```
    Checks your basic credential scope and visually confirms the target Account and Location names using safe, masked logging.
 
 3. **Get Current Reviews (Optional)**: 
    ```bash
-   python get_reviews.py
+   python scripts/get_reviews.py
    ```
    A utility script to manually fetch and print the raw list of reviews for the configured location.
 
 4. **Execute Auto-Replies**: 
    ```bash
-   python reply_to_reviews.py
+   python scripts/reply_to_reviews.py
    ```
    This initiates the core logic: it scans all recent reviews and posts your customized message from `templates.yaml` to any un-replied 4-star and 5-star reviews. It intentionally incorporates a 1-second delay between posting replies to respect Google's API rate limits.

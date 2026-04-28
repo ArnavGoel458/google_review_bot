@@ -1,6 +1,10 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import time
-from api import GoogleBusinessClient
-from config import logger, get_reply_template
+from core.api import GoogleBusinessClient
+from core.config import logger, get_reply_template
 
 def main():
     try:

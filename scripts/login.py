@@ -1,5 +1,9 @@
-from auth import get_credentials
-from config import logger
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from core.auth import get_credentials
+from core.config import logger
 
 def main():
     logger.info("Starting login / token refresh process...")

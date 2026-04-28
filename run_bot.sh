@@ -9,11 +9,11 @@ echo "======================================"
 echo ""
 
 echo "[Step 1] Checking Authentication..."
-python3 login.py
+python3 scripts/login.py
 echo ""
 
 echo "[Step 2] Fetching Business Profile Information..."
-python3 get_business.py
+python3 scripts/get_business.py
 echo ""
 
 echo "--------------------------------------"
@@ -27,7 +27,7 @@ read -r response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY]|"")$ ]]; then
     echo ""
     echo "[Step 3] Executing Auto-Reply Script..."
-    python3 reply_to_reviews.py
+    python3 scripts/reply_to_reviews.py
     echo ""
     echo "======================================"
     echo "        Bot Execution Complete!       "
